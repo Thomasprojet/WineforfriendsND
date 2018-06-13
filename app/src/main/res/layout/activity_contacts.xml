@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thomasapp.wineforfriendsnd.Contacts">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Liste de tous vos contacts"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/colorAccentblanc"
+            android:background="@color/colorPrimaryLight"/>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressbarcontacts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/imageflecheblanche"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/flecheblanche"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="flecheblanche"
+            android:background="@null"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerviewcontacts"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end">
+
+        <ImageButton
+            android:id="@+id/ibaddcontacts"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="addcontacts"
+            android:scaleType="fitCenter"
+            android:src="@drawable/croixrouge" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thomasapp.wineforfriendsnd.OnClick_Wine"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressbarmessages"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/imageflecheblanche"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/flecheblanche"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="flecheblanche"
+                android:background="@null"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/reprisetype"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/rouge_test"/>
+
+        <TextView
+            android:id="@+id/reprischateaux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Chateaux"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/reprisepremiercommentaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="premier commentaire"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/repriseajoutepar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="ajouté par:"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/repriserecyclerview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end">
+
+        <ImageButton
+            android:id="@+id/supprimerunvin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="suppvin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/supprimer" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end">
+
+     <ImageButton
+        android:id="@+id/coupsdecoeur"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/coeurblanc"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="75dp"
+         android:contentDescription="addcom" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end">
+
+        <ImageButton
+            android:id="@+id/ajouteruncommentaire"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/croixrouge"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="135dp"
+            android:contentDescription="addcom" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thomasapp.wineforfriendsnd.Add_Message"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"/>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressbaraddmessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageflecheblanche"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/flecheblanche"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="flecheblanche"
+        android:background="@null"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/ajoutermessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Ajoutez votre commentaire"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/buttonaddmessage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/enregistrer"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccentblanc"
+            android:background="@color/colorSecondary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

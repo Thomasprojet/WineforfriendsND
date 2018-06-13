@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tvcontactpseudo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="pseudo du contact"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorSecondary"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvcontactmail"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="14sp"
+                android:text="mail du contact"
+                android:textColor="@color/colorSecondary"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/checkboxvisibilite" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/separation2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/separation3"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+</LinearLayout>

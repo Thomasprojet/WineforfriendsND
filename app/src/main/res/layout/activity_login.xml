@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thomasapp.wineforfriendsnd.Login_Activity"
+    android:orientation="vertical"
+    android:background="@drawable/fondecran">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/progressbarlogin"
+        android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editTextmaillogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Tapez votre adresse mail"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorSecondary"
+                android:textColorHint="@color/colorSecondary"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/editTextpasswordlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Tapez votre mot de passe"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorSecondary"
+                android:textColorHint="@color/colorSecondary"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/colorAccentblanc"
+            android:text="  S'identifier  "   />
+
+        <TextView
+            android:id="@+id/TextViewregisteraccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous etes nouveau ? Créer un compte :)"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryLight" />
+
+    </LinearLayout>

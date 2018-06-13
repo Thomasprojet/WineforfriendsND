@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "47626441796",
+    "firebase_url": "https://wineforfriends-53459.firebaseio.com",
+    "project_id": "wineforfriends-53459",
+    "storage_bucket": "wineforfriends-53459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47626441796:android:e0f6fc24415518ae",
+        "android_client_info": {
+          "package_name": "thomasapp.wineforfriendsnd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47626441796-il6rv5duprr8ae62jqngkqfiega551b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYkYkWuLz-hr9I3m-NVFUl_G_iiIF2wgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

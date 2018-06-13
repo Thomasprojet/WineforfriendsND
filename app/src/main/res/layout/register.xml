@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondecran">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageflecheblanche"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/flecheblanche"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="flecheblanche"
+        android:background="@null"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/progressbarregister"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/editTextmailregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:hint="Adresse mail"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextmailbisregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:hint="Adresse mail confirmation"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextnameregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:hint="Pseudo"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextpasswordregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:hint="Mot de passe"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etez-vous un caviste?"
+            android:textColor="@color/colorSecondary"
+            android:layout_gravity="center_vertical"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxvisibilitecaviste"
+            android:layout_marginLeft="10dp"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tvforthcheckboxcaviste"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="@color/colorAccentblanc"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'enregistrer"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccentblanc"
+        android:background="@color/colorSecondary"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
